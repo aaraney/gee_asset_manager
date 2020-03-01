@@ -29,7 +29,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-def get_google_session(url: str, account_name: str, password: str, browser: str, headless: bool) -> requests.session:
+def get_google_session(url, account_name, password, browser, headless):
     """
     Get Google session object. The function will use Selenium and selected web driver to login to the
     account and create a session object.
